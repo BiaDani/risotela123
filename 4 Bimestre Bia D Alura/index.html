@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Riso de Tela reúne sinopses e avaliações de usuários verificáveis de comédias brasileiras.">
+  <meta name="theme-color" content="#a9442e">
+  <title>Riso de Tela — Comédias brasileiras</title>
+  <link rel="icon" href="assets/riso-tela-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#catalogo">Pular para o catálogo</a>
+
+  <header class="site-header">
+    <div class="shell header__inner">
+      <a class="brand" href="#inicio" aria-label="Riso de Tela, voltar ao início">
+        <svg class="brand__mark" viewBox="0 0 42 42" aria-hidden="true"><path d="M5 12.5A7.5 7.5 0 0 1 12.5 5h17A7.5 7.5 0 0 1 37 12.5v17a7.5 7.5 0 0 1-7.5 7.5h-17A7.5 7.5 0 0 1 5 29.5v-17Z" fill="currentColor"/><path d="M14 17.25h14M14 24.75h8.6" stroke="#fff7f0" stroke-width="3" stroke-linecap="round"/></svg>
+        <span>Riso <em>de</em> Tela</span>
+      </a>
+      <nav class="primary-nav" aria-label="Navegação principal">
+        <a href="#catalogo">Catálogo</a>
+        <a href="#fontes">Fontes</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="shell hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow"><span></span> Cinema brasileiro em cartaz</p>
+          <h1 id="hero-title">Rir é uma forma<br>de <i>lembrar.</i></h1>
+          <p class="hero__lede">Uma curadoria de comédias brasileiras para descobrir, revisitar e conversar depois dos créditos.</p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#catalogo">Explorar catálogo <span aria-hidden="true">↓</span></a>
+            <button class="button button--quiet" type="button" id="random-film">Escolha por mim <span aria-hidden="true">↗</span></button>
+          </div>
+          <dl class="hero__facts" aria-label="Informações da curadoria">
+            <div><dt>04</dt><dd>filmes em cartaz</dd></div>
+            <div><dt>100%</dt><dd>fontes abertas</dd></div>
+            <div><dt>IMDb</dt><dd>notas de usuários</dd></div>
+          </dl>
+        </div>
+
+        <aside class="spotlight" aria-label="Destaque da curadoria">
+          <div class="spotlight__tape">sessão em destaque <span>✦</span></div>
+          <img src="assets/posters/o-auto-da-compadecida.webp" alt="Cartaz do filme O Auto da Compadecida" width="640" height="905">
+          <div class="spotlight__caption">
+            <p>2000 · Comédia</p>
+            <h2>O Auto da<br>Compadecida</h2>
+            <div class="rating"><span aria-hidden="true">★</span><strong>8,6</strong><span>/ 10 no IMDb</span></div>
+          </div>
+          <span class="spotlight__burst" aria-hidden="true">RISO<br>&amp;<br>ARTE</span>
+        </aside>
+      </div>
+      <div class="hero__arc" aria-hidden="true"></div>
+    </section>
+
+    <section class="intro-band" aria-labelledby="intro-title">
+      <div class="shell intro-band__content">
+        <p class="section-number">01 — A seleção</p>
+        <div>
+          <h2 id="intro-title">Quatro histórias que mostram como a comédia brasileira cabe em muitos lugares.</h2>
+          <p>Do sertão à pequena vila, da casa de família ao romance de cidade pequena: cada ficha reúne uma sinopse factual e uma nota de usuários com origem identificada.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog" id="catalogo" aria-labelledby="catalog-title">
+      <div class="shell">
+        <div class="catalog__heading">
+          <div>
+            <p class="eyebrow eyebrow--dark"><span></span> Para escolher a próxima sessão</p>
+            <h2 id="catalog-title">Encontre seu filme</h2>
+          </div>
+          <p class="catalog__note">As notas são médias de usuários do IMDb, consultadas em 31 out. 2026. Elas podem mudar com novas avaliações.</p>
+        </div>
+
+        <div class="catalog__controls" aria-label="Ferramentas para pesquisar e filtrar filmes">
+          <div class="search-field">
+            <label for="search">Buscar por título</label>
+            <div class="search-field__input">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.2"></circle><path d="m16 16 4.2 4.2"></path></svg>
+              <input id="search" type="search" placeholder="Ex.: Lisbela" autocomplete="off">
+              <button class="clear-search" id="clear-search" type="button" aria-label="Limpar busca" hidden>×</button>
+            </div>
+          </div>
+          <div class="select-field">
+            <label for="filter">Recorte</label>
+            <select id="filter">
+              <option value="all">Todas as sessões</option>
+              <option value="familia">Família &amp; cotidiano</option>
+              <option value="sertao">Sertão em foco</option>
+              <option value="romance">Romance em cena</option>
+              <option value="satira">Sátira social</option>
+            </select>
+          </div>
+          <div class="select-field select-field--sort">
+            <label for="sort">Ordenar</label>
+            <select id="sort">
+              <option value="featured">Ordem da curadoria</option>
+              <option value="rating">Maior nota</option>
+              <option value="year-desc">Mais recentes</option>
+              <option value="year-asc">Mais antigos</option>
+              <option value="title">A–Z</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="catalog__meta">
+          <p id="result-count" role="status" aria-live="polite"></p>
+          <button type="button" id="reset-filters" class="text-button" hidden>Limpar filtros <span aria-hidden="true">×</span></button>
+        </div>
+        <div class="film-grid" id="film-grid" role="list" aria-label="Filmes selecionados"></div>
+        <div class="empty-state" id="empty-state" hidden>
+          <p class="empty-state__symbol" aria-hidden="true">⌕</p>
+          <h3>Nenhum filme nesta sessão.</h3>
+          <p>Tente outro título ou limpe os filtros para ver toda a seleção.</p>
+          <button type="button" class="button button--primary" id="empty-reset">Ver todos os filmes</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="method" id="fontes" aria-labelledby="method-title">
+      <div class="shell method__grid">
+        <div class="method__index" aria-hidden="true"><span>02</span><i>—</i></div>
+        <div class="method__content">
+          <p class="eyebrow eyebrow--light"><span></span> Transparência na curadoria</p>
+          <h2 id="method-title">Informação boa também merece créditos.</h2>
+          <p>As sinopses foram redigidas a partir de páginas de catálogo da Globo Filmes ou Globoplay. A avaliação de cada obra vem da nota média ponderada de usuários do IMDb. Os recortes temáticos são editoriais e têm links para as fontes que os contextualizam.</p>
+          <p class="method__small">Cartazes usados apenas para identificação editorial. Crédito exibido em cada ficha.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell site-footer__content">
+      <a class="brand brand--footer" href="#inicio" aria-label="Riso de Tela, voltar ao início"><span>Riso <em>de</em> Tela</span></a>
+      <p>Uma sessão de comédias brasileiras, com dados verificáveis.</p>
+      <a href="#inicio">Voltar ao topo <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+
+  <dialog class="film-dialog" id="film-dialog" aria-labelledby="dialog-title">
+    <button class="dialog-close" type="button" id="dialog-close" aria-label="Fechar detalhes">×</button>
+    <div class="dialog__layout">
+      <div class="dialog__poster"><img id="dialog-poster" src="" alt="" width="640" height="905"></div>
+      <div class="dialog__content">
+        <p class="dialog__eyebrow" id="dialog-meta"></p>
+        <h2 id="dialog-title"></h2>
+        <div class="dialog__rating" id="dialog-rating"></div>
+        <p class="dialog__label">Sinopse</p>
+        <p class="dialog__synopsis" id="dialog-synopsis"></p>
+        <div class="dialog__sources">
+          <a class="source-link" id="dialog-synopsis-source" href="#" target="_blank" rel="noreferrer">Fonte da sinopse <span aria-hidden="true">↗</span></a>
+          <a class="source-link" id="dialog-rating-source" href="#" target="_blank" rel="noreferrer">Avaliação no IMDb <span aria-hidden="true">↗</span></a>
+          <a class="source-link" id="dialog-context-source" href="#" target="_blank" rel="noreferrer" hidden>Contexto editorial <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="dialog__credit" id="dialog-credit"></p>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

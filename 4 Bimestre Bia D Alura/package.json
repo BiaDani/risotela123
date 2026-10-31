@@ -1,0 +1,11 @@
+{
+  "name": "riso-de-tela",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Catálogo acessível de comédias brasileiras com fontes verificáveis.",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check script.js",
+    "build": "rm -rf dist && mkdir -p dist && cp index.html styles.css script.js manus-routes.json dist/ && cp -R assets dist/assets"
+  }
+}
